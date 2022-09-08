@@ -1,0 +1,101 @@
+/* Dette viser at overskrifterne og teksten skal stå i midten*/
+h1,h2,h3, li, p {
+    text-align: center;
+}
+
+/* Størrelsen på min beskrivelses tekst*/
+p {
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+p {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Dette viser linje afstand mellem punkterne og beskrivelsen om mig*/
+li,p {
+    line-height:2;
+}
+
+img {
+    margin-right: 200px;
+}
+
+/* Dette viser at billedet står i midten*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remove bullets og hvor fed skriften skal være */
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+}
+
+ol {
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/* Baggrundens farve */
+ {
+    background-color: pink;
+}
+
+/* Overskriftens farve*/
+#velkommen {
+    color: deeppink;
+}
+
+/* Underskriftens farve*/
+#indblik {
+    color: orangered;
+}
+
+/* farve på de små overskrfiter*/
+.uddannelse {
+    color: dodgerblue;
+}
+
+.arbejde {
+    color: mediumvioletred;
+}
+
+.frivillig {
+    color: purple;
+}
+
+.kontakt {
+    color: darkgreen;
+}
+
+/* Header og farve*/
+.header {
+    padding: 20px;
+    background: #FEEAEE;
+    color: #FEEAEE;
+    font-size: 35px;
+}
+
+/* Overskriftens tekst og størrelset*/
+#velkommen {
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Underskriftens tekst og størrelset*/
+#indblik {
+    font-size: 25px;
+    text-align: center;
+}
