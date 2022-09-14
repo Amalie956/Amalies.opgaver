@@ -124,6 +124,7 @@ if (balance > 1000) {
 //Exercise 3 - level 2
 //Create a small program that gives you a message depending on your mood! It should: Use a variable called mood
 
+/*
 const mood = 5;
 
 if (mood === "happy") {
@@ -135,4 +136,81 @@ if (mood === "happy") {
 } else {
     console.log("I'm sorry, I'm still learning about feelings!")
 }
+*/
 
+//Exercise 5 - level 1
+//Print out Hello World 3 times
+/*
+for(let i = 0; i < 3; i++) {
+console.log("Hello World");
+}
+
+
+/*
+//Use a loop to print the numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+*/
+
+/*
+//Use a loop to print a * 10 times
+for (let i = 1; i <= 10; i++) {
+    console.log("a*", i);
+}
+*/
+
+/*
+//Use a loop to print the numbers starting from 5 to -5
+for (let i = 5; i >= -5; i--) {
+    console.log(i)
+}
+*/
+
+/*
+//Use a loop to print every third number from 5 to 30
+for (let i =5; i <=30; i+=3) {
+    console.log(i)
+}
+*/
+
+/*
+//Exercise 7. Level 2 - Using a for loop write a random number of hashtags (#) (Maximum 10) to the webpage
+for (let i = 0; i <Math.floor(Math.random() * 10); i++) {
+    console.log("#")
+}
+*/
+
+//Exercise 8. Level 2 - Using a for loop print all numbers from 1 to 10
+//If the number is larger than 5 also print "INDEX is larger than 5"
+/*
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+numbers.forEach(number => {
+    if(number > 5) {
+        console.log(number + " is larger than 5");
+    } else {
+        console.log(number);
+    }
+});
+*/
+
+/*
+for (let i = 1; i <= 10; i++) {
+    if (i > 5) {
+    console.log(i + " is larger than 5");
+    } else {
+        console.log(i);
+    }
+}
+*/
+
+//Exercise 8.1. Level 2 - Using a for loop and conditionals print out the following
+
+for (let i = 1; i <= 10; i++) {
+    if (1 < 3) {
+        console.log(i + " is a small number");
+    } else {
+        console.log(i);
+    }
+}
