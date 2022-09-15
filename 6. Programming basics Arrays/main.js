@@ -10,7 +10,7 @@ console.log(selectedColors.length);     //Fortæller hvor mange elements der er 
 */
 
 //Video 2: How to use JS Array Methods
-let supers = [`Superman`, `Batman`, `Flash`, `Aquaman`];
+//let supers = [`Superman`, `Batman`, `Flash`, `Aquaman`];
 
 //console.log(supers[supers.length - 1]); //Betyder at Aquaman kun dukker op
 
@@ -53,7 +53,139 @@ let supers = [`Superman`, `Batman`, `Flash`, `Aquaman`];
 //console.log(supers);
 //console.log(newSupers);
 
-//Join
+//Join - tager en array til en string
 //console.log(supers.join(", "));
 
-//nåede til 10 min
+//split
+//let supers = "superman, Batman, Flash"
+//let supersArrary = supers.split(", ");
+//console.log(supersArrary);
+
+
+
+
+
+//Warmup exercises (individual)
+//Exercise 1 -Now, using the correct indexes, get the following values from the array:
+//const fruits = ['banana', 'apple', 'strawberry', 'kiwi', 'fig', 'orange'];
+
+/*
+//strawberry
+const indexOfstrawberry = fruits.indexOf("strawberry")
+console.log(indexOfstrawberry); //2
+
+//kiwi
+const indexOfkiwi = fruits.indexOf("kiwi")
+console.log(indexOfkiwi); //3
+
+//orange
+const indexOforange = fruits.indexOf("orange")
+console.log(indexOforange); //5
+
+//banana
+const indexOfbanana = fruits.indexOf("banana")
+console.log(indexOfbanana); //0
+*/
+
+//Exercise 1 - Then, replace apple with raspberry, and replace fig with pineapple
+//const fruits = ['banana', 'apple', 'strawberry', 'kiwi', 'fig', 'orange'];
+/*
+fruits.splice(1,1,  "raspberry");
+fruits.splice(4, 1,"pineapple");
+console.log(fruits);
+*/
+
+//Exercise 2 - Write some code that can get the last element in an array
+/*
+const names = ['Peter', 'Susan', 'Charlotte'];
+const lastElementInTheArray = names.pop();
+console.log(lastElementInTheArray); // Charlotte
+*/
+/*
+const moreNames = ['Peter', 'Susan', 'Charlotte', 'Abdullah'];
+const lastElementInTheArray = moreNames.pop();
+console.log(lastElementInTheArray); // Abdullah
+*/
+
+//Exercise 3 - Create an array with numbers: 2,3,4,5
+//To input a number "1" at the start of the array
+
+/*
+const numbers = [2,3,4,5];
+numbers.unshift(1);
+console.log(numbers);
+*/
+
+//Pair Programming (Random groups):
+//Exercise 1 - Write an array with 4 names and Write a program that prints each name
+/*
+const names = ["Simba", "Mynthe", "Pelle", "Modig"];
+names.forEach(consoleIthem);
+function consoleIthem(item, index, arr) {
+    console.log(item);
+}
+*/
+
+//Exercise 2 - Write an array with 5 numbers
+// Write a program that calculates the average of the numbers (using loops)
+/*
+let numbers = [1,2,3,4,5]
+let sum = 0
+
+for (let i = 0; i < numbers.length; i++) {
+    sum = sum + numbers [i];
+}
+console.log(sum/numbers.length);
+ */
+
+//Exercise 3 - Write an array with 5 strings. Write a program that adds every string to a new array
+//             Except if the string has more than 3 characters
+/*
+const string = ["adddd","b","c","dhhhh","abcde"] //array with 5 strings
+const newArray = []; //new array is placed here
+
+for (let i = 0; i < string.length; i++)  //for loop
+    if (string[i].length > 3) { //string has more than 3 characters
+        newArray.push(string[i]);//push - tilføjer et nyt element i slutningen
+        console.log(newArray);//her logger man den
+    }
+*/
+
+//Exercise 4
+//Write an array with numbers 1...10.
+//Write a program such that the last number is printed first up until the first number of the array
+//When the countdown 10, 9 ,8 ..., 1 has passed the program will print out: BOOM
+/*
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+for (let i = 10; i >= 1; i--) {
+console.log(i);
+if (i == 1)
+    console.log("BOOM");
+}
+*/
+
+//Exercise 5
+//Write an array with a mixed combination of strings and integers
+//If the array contained most strings it will output "Most strings"
+//Otherwise it will print "Most integers"
+/*
+const mixed = [1, "two", 3, "four", 5, "six"];
+let numOfstring = 0;
+let numOfInts = 0;
+
+for (let i = 0; i < mixed.length; i++) {
+    if (typeof mixed[i] === "string") {
+        numOfstring = numOfstring + 1;
+    }
+    else if (typeof mixed[i] === "number") {
+        numOfInts = numOfInts +1;
+    }
+}
+if (numOfInts > numOfstring) {
+    console.log("Most intefers");
+}
+else {
+    console.log("Most string");
+}
+ */
