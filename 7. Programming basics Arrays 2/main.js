@@ -72,7 +72,6 @@ console.log(newArray);
 /*
 const numbers = [1,2,3,4,5];
 let newArray = []
-
 numbers.forEach((num, index) => {
     newArray.push(num + 1)
 });
