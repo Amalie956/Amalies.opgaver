@@ -112,18 +112,17 @@ for (let i = 30; i >= 10; i--) {
 //Exercise 2.1 - level 1
 //Create a variable called balance. If balance is larger than 10000 log out I am rich 💰. Otherwise log out I am poor
 /*
-const balance = 900
+const balance = 100000
 
-if (balance > 1000) {
+if (balance > 10000) {
     console.log("I am rich");
-} else if (balance < 1000) {
+} else if (balance < 10000) {
     console.log("I am poor");
 }
 */
 
 //Exercise 3 - level 2
 //Create a small program that gives you a message depending on your mood! It should: Use a variable called mood
-
 /*
 const mood = 5;
 
@@ -141,10 +140,10 @@ if (mood === "happy") {
 //Exercise 5 - level 1
 //Print out Hello World 3 times
 /*
-for(let i = 0; i < 3; i++) {
-console.log("Hello World");
+for (let i = 0; i < 3; i++) {
+    console.log("Hello World");
 }
-
+*/
 
 /*
 //Use a loop to print the numbers from 1 to 10
@@ -169,14 +168,14 @@ for (let i = 5; i >= -5; i--) {
 
 /*
 //Use a loop to print every third number from 5 to 30
-for (let i =5; i <=30; i+=3) {
+for (let i = 5; i <= 30; i += 3) {
     console.log(i)
 }
 */
 
 /*
 //Exercise 7. Level 2 - Using a for loop write a random number of hashtags (#) (Maximum 10) to the webpage
-for (let i = 0; i <Math.floor(Math.random() * 10); i++) {
+for (let i = 0; i < Math.floor(Math.random() * 10); i++) {
     console.log("#")
 }
 */
@@ -184,10 +183,10 @@ for (let i = 0; i <Math.floor(Math.random() * 10); i++) {
 //Exercise 8. Level 2 - Using a for loop print all numbers from 1 to 10
 //If the number is larger than 5 also print "INDEX is larger than 5"
 /*
-const numbers = [1,2,3,4,5,6,7,8,9,10];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 numbers.forEach(number => {
-    if(number > 5) {
+    if (number > 5) {
         console.log(number + " is larger than 5");
     } else {
         console.log(number);
@@ -198,7 +197,7 @@ numbers.forEach(number => {
 /*
 for (let i = 1; i <= 10; i++) {
     if (i > 5) {
-    console.log(i + " is larger than 5");
+        console.log(i + " is larger than 5");
     } else {
         console.log(i);
     }
@@ -206,11 +205,66 @@ for (let i = 1; i <= 10; i++) {
 */
 
 //Exercise 8.1. Level 2 - Using a for loop and conditionals print out the following
-
+/*
 for (let i = 1; i <= 10; i++) {
-    if (1 < 3) {
+    if (i <= 3) {
         console.log(i + " is a small number");
+    } else if (i <= 6) {
+        console.log(i + " is a relatively small number");
+    } else if (i <= 9) {
+        console.log(i + " is a large number");
+    } else if (i <= 10) {
+        console.log(i + " is a ten");
     } else {
         console.log(i);
     }
 }
+*/
+
+//Exercise 9 - level 2
+//Create a for loop that logs out each individual character in a string
+//With the last character log out "This is the last character"
+/*
+const character = 'string';
+
+for (let i = 0; i < character.length; i++){
+    console.log(character[i]);
+    if (i === character.length-1) {
+        console.log("This is the last character");
+    }}
+*/
+
+//Exercise 9.1 - level 3
+//Create a for loop that logs out each individual character in a string
+//With the middle character log out "This is the middle character"
+/*
+const character = 'hello';
+
+for (let i = 0; i < character.length; i++) {
+
+    if (i === Math.floor(character.length / 2)) {
+        console.log(character[i] + " This is the middle character");
+    }
+    else
+        console.log(character[i]);
+}
+*/
+
+//Exercise 11 - level 3
+
+var x,y,chr;
+for(x=1; x <=9; x++)
+{
+    for (y=1; y < x; y++)
+    {
+        chr=chr+("#");
+    }
+    console.log(chr);
+    chr='';
+}
+console.log("(a)");
+
+
+
+
+
