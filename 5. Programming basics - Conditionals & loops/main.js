@@ -248,7 +248,7 @@ for (let i = 0; i < character.length; i++) {
     else
         console.log(character[i]);
 }
-*/
+ */
 
 //Exercise 11 - level 3
 
