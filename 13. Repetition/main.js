@@ -113,6 +113,7 @@ function newCat1(cat) {
 
 newCat1(newCat);
 
+
 //Level 2 - Using the list of cats -
 //Write a function that takes a list of cats and returns a single string with all their names
 //Print the string outside of the function scope
