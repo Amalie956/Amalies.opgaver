@@ -31,27 +31,44 @@ start ();
  */
 
 //Exercises - Functions calling, defining
-//Exercise 1 - level 1 - Create a function that takes a string and then logs that string out
-/*
-function greet(name) {
-    console.log(`Hilsen ` + name);
+//Exercise 1 - level 1. Create a function that takes a string and then logs that string out
+function someFunctionName() {
+    const loc = "hello";
+    const locO = "abcd";
+    console.log(loc);
+    console.log(locO);
 }
+//someFunctionName();
 
-greet(`Amalie`); //logs out Hilsen Amalie
-*/
 
-/*
-function greeting() {
-    console.log(`Hej med dig`);
+//Exercise 1.1 - level 1. Create a function that adds two numbers together
+function add(a, b) {
+    const sum = a + b
+    console.log(sum);
 }
-greeting(); //logs out Hej med dig
-*/
+//add(10, 10);
 
-//Exercise 2 - level 1
-//Create a function that takes a name and returns true if the first character is the character a otherwise false
 
-function names() {
-    const names = `kea or anna`;
-    console.log(names.startsWith(`anna`, 7));
+//Exercise 2 - level 1. Create a function that takes a name and returns true if the first character is the character an otherwise false
+function firstCharacter(firstA) {
+    if (firstA[2] === `a`) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
-names();
+console.log(firstCharacter("kea"));
+console.log(firstCharacter("anna"));
+
+
+//Exercise 3 - level 1.
+function celsiusToFahrenheit(celsius) {
+    let CONVERTED_TEMPERATURE;
+    CONVERTED_TEMPERATURE = celsius * 9/5 + 32;
+    return CONVERTED_TEMPERATURE;
+}
+//console.log(celsiusToFahrenheit(30) + " degree fahrenheit");
+
+//Exercise 4 - level 2
+
