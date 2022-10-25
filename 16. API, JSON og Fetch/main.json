@@ -1,0 +1,23 @@
+{
+  "orders": [{
+    "order_name1": "pizza",
+    "order_name2": "pitabrød",
+    "extra": [{
+      "name": "cheese",
+      "price": 12
+    }, {
+        "name": "pepperoni",
+        "price": 10
+      }, {
+        "name": "bell pepper",
+        "price": 8
+      }, {
+        "name": "ham",
+        "price": 13
+      }],
+      "order_id": 1,
+      "price": 65,
+      "currency": "dk",
+      "drinks": ["Mojito", "Isbjørn", "Gin og tonic", "Filur", "White Russian"]
+    }]
+  }
