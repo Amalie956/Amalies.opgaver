@@ -54,4 +54,39 @@ fetch('https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0a
         }
     });
 
+//Exercise 5 - level 2
+//Create a button with the text Get newer movies. When clicked it should only show movies that came out after 2014.
+const button = document.querySelector("#submit");
+button.addEventListener('click', function (event) {
+    const listUnderButton = document.querySelector("#exercise5_1");
+    fetch('https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0ae8d0a4/raw/02d8bc9ec9a73e463b13c44df77a87255def5ab9/movies.json')//Her sender man en request til api'en
+        .then(response => response.json())
+        .then(movies => {
+                for (let i = 0; i < movies.length; i++) {
+                    if (movies[i].year >= 2014) {
+                        let listOfLi = document.createElement("li");
+                        listOfLi.innerHTML = movies[i].title + ", år: " + movies[i].year;
+                        listUnderButton.appendChild(listOfLi);
+                    }
+                }
+            }
+        )
+});
 
+// Exercise 6 - level 3
+//Create an input element where people can search for a movie. While the user writes something the movies should be updated!
+function inputElement(inputText) {
+    const listUnderInput = document.querySelector("#exercise6_1");
+    listUnderInput.innerHTML = "";
+    fetch('https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0ae8d0a4/raw/02d8bc9ec9a73e463b13c44df77a87255def5ab9/movies.json')//Her sender man en request til api'en
+        .then(response => response.json())
+        .then(movies => {
+                for (let i = 0; i < movies.length; i++) {
+                    if (movies[i].title.match(inputText)) {
+                        let listOfLi = document.createElement("li");
+                        listOfLi.innerHTML = movies[i].title;
+                        listUnderInput.appendChild(listOfLi);
+                    }
+                }
+            })
+}
